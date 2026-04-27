@@ -1,0 +1,24 @@
+{
+  "agent_name": "Scoring Agent",
+  "agent_id": "69ec78fc24ab0c3dc67d87e0",
+  "description": "Computes final viability scores with data-referenced justification using all upstream data",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "scores": {
+      "idea_score": "number",
+      "adoption_probability": "number",
+      "risk_score": "number",
+      "justification": "string"
+    }
+  },
+  "example_response": {
+    "scores": {
+      "idea_score": 0,
+      "adoption_probability": 0,
+      "risk_score": 0,
+      "justification": "sample string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent_name": "BehaviorSim Agent",
+  "agent_id": "69ec7380803095f4cc58a76b",
+  "description": "Simulates each persona's journey from awareness to decision with clarity scores, adoption likelihood, objections, and drop-off points",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "simulations": [
+      {
+        "persona_name": "string",
+        "clarity_score": "number",
+        "adoption_score": "number",
+        "first_impression": "string",
+        "key_objections": ["string"],
+        "drop_off_point": "string",
+        "conversion_trigger": "string"
+      }
+    ]
+  }
+}

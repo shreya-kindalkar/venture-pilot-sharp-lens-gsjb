@@ -1,0 +1,21 @@
+{
+  "agent_name": "ProblemDetect Agent",
+  "agent_id": "69ec73807e79c00077377b4e",
+  "description": "Aggregates behavior simulations, clusters objections, categorizes and ranks problems by severity and frequency",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "problems": [
+      {
+        "title": "string",
+        "category": "string",
+        "severity": "string",
+        "frequency": "number",
+        "description": "string",
+        "impact": "string",
+        "affected_personas": ["string"]
+      }
+    ]
+  }
+}

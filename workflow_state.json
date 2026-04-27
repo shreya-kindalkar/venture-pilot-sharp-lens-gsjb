@@ -1,0 +1,65 @@
+{
+  "app_name": "VenturePilot",
+  "description": "Startup Validation Dashboard with 5-agent pipeline",
+  "agents": {
+    "validation_pipeline_manager": {
+      "agent_id": "69ec739f2d2419110b70f24f",
+      "name": "Validation Pipeline Manager",
+      "type": "manager",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "file_output": true,
+      "managed_agents": [
+        "69ec7380803095f4cc58a769",
+        "69ec7380803095f4cc58a76b",
+        "69ec73807e79c00077377b4e",
+        "69ec738128084f7fe417ed7d",
+        "69ec738124ab0c3dc67d86f2"
+      ]
+    },
+    "persona_sim_agent": {
+      "agent_id": "69ec7380803095f4cc58a769",
+      "name": "PersonaSim Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "behavior_sim_agent": {
+      "agent_id": "69ec7380803095f4cc58a76b",
+      "name": "BehaviorSim Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "problem_detect_agent": {
+      "agent_id": "69ec73807e79c00077377b4e",
+      "name": "ProblemDetect Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "strategy_agent": {
+      "agent_id": "69ec738128084f7fe417ed7d",
+      "name": "Strategy Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "scoring_agent": {
+      "agent_id": "69ec738124ab0c3dc67d86f2",
+      "name": "Scoring Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    }
+  },
+  "primary_agent_id": "69ec739f2d2419110b70f24f",
+  "workflow_pattern": "manager-subagent",
+  "pipeline_order": [
+    "PersonaSim Agent",
+    "BehaviorSim Agent",
+    "ProblemDetect Agent",
+    "Strategy Agent",
+    "Scoring Agent"
+  ]
+}

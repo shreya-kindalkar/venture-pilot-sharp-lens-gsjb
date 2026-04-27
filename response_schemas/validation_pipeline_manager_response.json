@@ -1,0 +1,158 @@
+{
+  "agent_name": "Validation Pipeline Manager",
+  "agent_id": "69ec739f2d2419110b70f24f",
+  "description": "Orchestrates the 5-agent sequential pipeline for startup validation. Passes startup idea through PersonaSim, BehaviorSim, ProblemDetect, Strategy, and Scoring agents. Handles fallback data when sub-agents fail. Aggregates all outputs into final combined JSON response.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "personas": [
+      {
+        "name": "string",
+        "age": "number",
+        "job_title": "string",
+        "primary_goal": "string",
+        "frustrations": [
+          "string"
+        ],
+        "behavior_traits": [
+          "string"
+        ],
+        "tech_familiarity": "string",
+        "income_level": "string",
+        "spending_behavior": "string"
+      }
+    ],
+    "simulations": [
+      {
+        "persona_name": "string",
+        "clarity_score": "number",
+        "adoption_score": "number",
+        "first_impression": "string",
+        "key_objections": [
+          "string"
+        ],
+        "drop_off_point": "string",
+        "conversion_trigger": "string"
+      }
+    ],
+    "problems": [
+      {
+        "title": "string",
+        "category": "string",
+        "severity": "string",
+        "frequency": "number",
+        "description": "string",
+        "impact": "string",
+        "affected_personas": [
+          "string"
+        ]
+      }
+    ],
+    "strategies": [
+      {
+        "priority": "number",
+        "title": "string",
+        "effort": "string",
+        "expected_impact": "string",
+        "rationale": "string",
+        "problem_solved": "string",
+        "success_metric": "string"
+      }
+    ],
+    "scores": {
+      "idea_score": "number",
+      "adoption_probability": "number",
+      "risk_score": "number",
+      "justification": "string"
+    },
+    "metadata": {
+      "completed_stages": [
+        "string"
+      ],
+      "failed_stages": [
+        "string"
+      ],
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "personas": [
+      {
+        "name": "sample string",
+        "age": 0,
+        "job_title": "sample string",
+        "primary_goal": "sample string",
+        "frustrations": [
+          "sample string"
+        ],
+        "behavior_traits": [
+          "sample string"
+        ],
+        "tech_familiarity": "sample string",
+        "income_level": "sample string",
+        "spending_behavior": "sample string"
+      }
+    ],
+    "simulations": [
+      {
+        "persona_name": "sample string",
+        "clarity_score": 0,
+        "adoption_score": 0,
+        "first_impression": "sample string",
+        "key_objections": [
+          "sample string"
+        ],
+        "drop_off_point": "sample string",
+        "conversion_trigger": "sample string"
+      }
+    ],
+    "problems": [
+      {
+        "title": "sample string",
+        "category": "sample string",
+        "severity": "sample string",
+        "frequency": 0,
+        "description": "sample string",
+        "impact": "sample string",
+        "affected_personas": [
+          "sample string"
+        ]
+      }
+    ],
+    "strategies": [
+      {
+        "priority": 0,
+        "title": "sample string",
+        "effort": "sample string",
+        "expected_impact": "sample string",
+        "rationale": "sample string",
+        "problem_solved": "sample string",
+        "success_metric": "sample string"
+      }
+    ],
+    "scores": {
+      "idea_score": 0,
+      "adoption_probability": 0,
+      "risk_score": 0,
+      "justification": "sample string"
+    },
+    "metadata": {
+      "completed_stages": [
+        "sample string"
+      ],
+      "failed_stages": [
+        "sample string"
+      ],
+      "timestamp": "sample string"
+    }
+  },
+  "has_module_outputs": true,
+  "module_outputs_example": {
+    "artifact_files": [
+      {
+        "file_url": "https://example.com/file.pdf"
+      }
+    ]
+  }
+}

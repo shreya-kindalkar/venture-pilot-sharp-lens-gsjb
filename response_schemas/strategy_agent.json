@@ -1,0 +1,21 @@
+{
+  "agent_name": "Strategy Agent",
+  "agent_id": "69ec738128084f7fe417ed7d",
+  "description": "Converts detected problems into prioritized, specific, implementable action items with rationale, impact, effort, and success metrics",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "strategies": [
+      {
+        "priority": "number",
+        "title": "string",
+        "effort": "string",
+        "expected_impact": "string",
+        "rationale": "string",
+        "problem_solved": "string",
+        "success_metric": "string"
+      }
+    ]
+  }
+}

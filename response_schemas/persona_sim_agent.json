@@ -1,0 +1,23 @@
+{
+  "agent_name": "PersonaSim Agent",
+  "agent_id": "69ec7380803095f4cc58a769",
+  "description": "Generates exactly 5 diverse, realistic user personas as a JSON array based on the startup idea",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "personas": [
+      {
+        "name": "string",
+        "age": "number",
+        "job_title": "string",
+        "primary_goal": "string",
+        "frustrations": ["string"],
+        "behavior_traits": ["string"],
+        "tech_familiarity": "string",
+        "income_level": "string",
+        "spending_behavior": "string"
+      }
+    ]
+  }
+}

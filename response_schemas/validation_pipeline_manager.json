@@ -1,0 +1,75 @@
+{
+  "agent_name": "Validation Pipeline Manager",
+  "agent_id": "69ec739f2d2419110b70f24f",
+  "description": "Orchestrates the 5-agent sequential pipeline for startup validation",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "has_file_output": true,
+  "response_schema": {
+    "personas": [
+      {
+        "name": "string",
+        "age": "number",
+        "job_title": "string",
+        "primary_goal": "string",
+        "frustrations": ["string"],
+        "behavior_traits": ["string"],
+        "tech_familiarity": "string",
+        "income_level": "string",
+        "spending_behavior": "string"
+      }
+    ],
+    "simulations": [
+      {
+        "persona_name": "string",
+        "clarity_score": "number",
+        "adoption_score": "number",
+        "first_impression": "string",
+        "key_objections": ["string"],
+        "drop_off_point": "string",
+        "conversion_trigger": "string"
+      }
+    ],
+    "problems": [
+      {
+        "title": "string",
+        "category": "string",
+        "severity": "string",
+        "frequency": "number",
+        "description": "string",
+        "impact": "string",
+        "affected_personas": ["string"]
+      }
+    ],
+    "strategies": [
+      {
+        "priority": "number",
+        "title": "string",
+        "effort": "string",
+        "expected_impact": "string",
+        "rationale": "string",
+        "problem_solved": "string",
+        "success_metric": "string"
+      }
+    ],
+    "scores": {
+      "idea_score": "number",
+      "adoption_probability": "number",
+      "risk_score": "number",
+      "justification": "string"
+    },
+    "metadata": {
+      "completed_stages": ["string"],
+      "failed_stages": ["string"],
+      "timestamp": "string"
+    }
+  },
+  "module_outputs": {
+    "artifact_files": [
+      {
+        "file_url": "string"
+      }
+    ]
+  }
+}
